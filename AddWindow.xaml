@@ -1,0 +1,27 @@
+﻿<Window x:Class="Телефонный_справочник.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Телефонный_справочник"
+        mc:Ignorable="d"
+        Title="Edit" Height="403" Width="499" WindowStartupLocation="CenterScreen" Background="Green">
+    <Grid>
+        <Button x:Name="SaveBtn" Content="Сохранить" HorizontalAlignment="Center" Click="SaveBtn_Click" Margin="0,328,0,0" VerticalAlignment="Top" Height="29" Width="116" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="Lastname" Text="Фамилия" HorizontalAlignment="Left" Margin="28,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="25" FontSize="16"/>
+        <TextBox x:Name="Namecont" Text="Имя" HorizontalAlignment="Left" Margin="188,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Height="25" FontSize="16"/>
+        <TextBox x:Name="nameTB" Text="Отчество" HorizontalAlignment="Left" Margin="28,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="25" FontSize="16"/>
+        <TextBox x:Name="number" Text="Номер телефона" HorizontalAlignment="Left" Margin="188,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="25" FontSize="16"/>
+        <TextBox x:Name="email" Text="E-mail" HorizontalAlignment="Left" Margin="28,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="26" FontSize="16"/>
+        <TextBox x:Name="Company" Text="Компания" HorizontalAlignment="Left" Margin="188,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="25" FontSize="16"/>
+        <TextBox x:Name="WorkTb" Text="Должность" HorizontalAlignment="Left" Margin="28,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="25" FontSize="16"/>
+        <Image x:Name="imagescont" HorizontalAlignment="Left" Height="155" Margin="328,169,0,0" VerticalAlignment="Top" Width="122"/>
+        <DatePicker x:Name="datebirth1" HorizontalAlignment="Left" Margin="132,215,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ID_group" HorizontalAlignment="Left" Margin="188,169,0,0" VerticalAlignment="Top" Width="135">
+            <ComboBoxItem Content="Друзья"/>
+            <ComboBoxItem Content="Коллеги"/>
+            <ComboBoxItem Content="Родственники"/>
+        </ComboBox>
+
+    </Grid>
+</Window>
